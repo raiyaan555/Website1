@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+*{
+    margin:0;
+    padding:0; 
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width :33%;
+    border: 3px white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    font-family: 'Coming Soon', cursive;
+}
+
+  .nav-list{
+     width: 70%;
+     display: flex;
+     justify-content: center ;
+     align-items: center;
+     font-family: 'Coming Soon', cursive;
+
+  }
+  .nav-list li{
+      list-style: none;
+      padding: 26px 30px ;
+      font-family: 'Coming Soon', cursive;
+  }
+  .nav-list li a{
+      text-decoration: none;
+      color: white;
+      font-family: 'Coming Soon', cursive;
+  }
+  .nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+  }
+  .rightnav{
+      padding:0 23px;
+      width: 40%;
+      text-align: right;
+      font-family: 'Coming Soon', cursive;
+
+  }
+  #search{
+      padding: 5px;
+      font-size: 17px;
+      border:2px solid grey;
+      border-radius: 9px ;
+  }
+  .background{
+      background: rgba(0,0,0,0.7) url('requirement/website.jpg');
+      background-size: cover;
+      background-blend-mode: darken;
+  }
+  .boxmain{
+      display: flex;
+      height:80%;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: 'Coming Soon', cursive;
+      
+  }
+  .firstsection{
+     height: 100vh;
+  }
+  .firstsec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .secondsec {
+      width:30%;
+  }
+  .secondsec img{
+      width:70%;
+      border:5px white;
+      border-radius: 150px;
+      display: block;
+      margin: auto;
+  }
+  .textbig{
+    font-size: 41px;
+  }
+  .textsmall{
+    font-size: 18px;
+  }
+  .btn1{
+      padding:8px 8px;
+      margin:7px 0;
+      background-color:rgb(153, 19, 41) ;
+      border-radius: 20px;
+      color: white;
+      border-color: black;
+      font-family: 'Coming Soon', cursive;
+  }
+  .btn2{
+    padding:8px 8px;
+    margin:7px 0;
+    color:white;
+    border-radius: 20px;
+    border-color: black;
+    background-color: blue;
+    font-family: 'Coming Soon', cursive;
+  }
+  .btn3{
+        padding:8px 8px;
+        margin:7px 0;
+        color:white;
+        border-radius: 20px;
+        border-color: black;
+        background-color: royalblue;
+        font-family: 'Coming Soon', cursive;
+  }
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+    border-color:5px black;
+    border-radius: 45px;
+    font-family: 'Coming Soon', cursive;
+
+}
+.section-right{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.7) url('requirement/website.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    max-width: 100%;
+    margin:auto;
+    font-family: 'Coming Soon', cursive;
+}
+.section-left{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.7) url('requirement/website.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    max-width: 100%;
+    margin:auto;
+    flex-direction: row-reverse;
+    font-family: 'Coming Soon', cursive;
+
+}
+.thumbnail{
+height: 20%;
+border: 2px white;
+border-radius: 55px;
+margin:12px
+
+
+}
+.contact{
+    background-color: #f6f5f4;
+    height: 34vh;
+}
+.text-center{
+    text-align: center;
+}
+.form{
+    max-width: 1200px;
+    margin:auto;   
+}
+.form input{  
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Coming Soon', cursive;
+
+}
+.textarea forminput{
+    margin: 14px 0;
+    padding: 10px 10px;
+    max-width: 1200px;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Coming Soon', cursive;
+
+}
+.btn-dark{
+    text-align: center;
+    margin: 10px 0;
+    padding: 2px 2px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Coming Soon', cursive;
+}
+.burger{
+ display:none;
+ position:absolute;
+ cursor: pointer;
+ right:5% ;
+ top:15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin:  3px 3px;
+}
+@media only screen and (max-width: 1081px){
+    .nav-list{
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+
+}
